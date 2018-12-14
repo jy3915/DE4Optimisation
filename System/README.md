@@ -8,6 +8,7 @@
   - [curve fitting toolbox](https://uk.mathworks.com/products/curvefitting.html)
   - [optimization toolbox](https://uk.mathworks.com/products/optimization.html)
 ## Instruction
+**NOTE:** execution time are recorded with Windows 10 Pro system setup running Intel(R)Core(TM)i7-4710MQ CPU @ 2.50GHz.
 ### 1. Overall objective of system level optimisation
 The system level objective was to **maximise** the **volume** of the object carried, with drone arm width and thickness optimized in subsystem 1, the maximum stress on drone arms could act as a variable indicating the load of objective volume that the drone could carry. 
 
