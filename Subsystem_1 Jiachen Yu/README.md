@@ -52,7 +52,7 @@ Plotting the objective function with constraint functions, it showed that the de
 ![](image/compare_surf.png)
 
 ### 3. Optimisation
-Open [subsystem1_optimisation.m](subsystem1_optimisation.m) and run the code in MATLAB.The optimisation method used for this objective function was nonlinear constrained optimisation. A local minimum was found at the upper bounds of the variable ranges, where width = 20mm and thickness = 4.5mm.
+Open [subsystem1_optimisation.m](subsystem1_optimisation.m) and run the code in MATLAB(Elapsed time is 0.437070 seconds).The optimisation method used for this objective function was nonlinear constrained optimisation. A local minimum was found at the upper bounds of the variable ranges, where width = 20mm and thickness = 4.5mm.
 
     Local minimum found that satisfies the constraints.
 
