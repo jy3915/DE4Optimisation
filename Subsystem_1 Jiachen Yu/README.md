@@ -18,7 +18,7 @@ Open [stress_armlength.m](stress_armlength.m) and run the code in MATLAB(Elapsed
 
 This indicated the linear relationship between drone arm length and maximum stress. The dimensional lower bound for arm length was 81.6mm, so the arm length was minimized to 81.6mm.
 ### 2. Objective function with variables of arm width and thickness 
-Open [stress_armwidth_armthickness.m](stress_armwidth_armthickness.m) and run the code in MATLAB. The code reads the data in [ruall.csv](ruall.csv) and use curve fitting toolbox to generate functions subject to drone arm width and thickness.
+Open [stress_armwidth_armthickness.m](stress_armwidth_armthickness.m) and run the code in MATLAB(Elapsed time is 0.408325 seconds). The code reads the data in [ruall.csv](ruall.csv) and use curve fitting toolbox to generate functions subject to drone arm width and thickness.
 
 The objective function was generated with arm width and thickness against maximum stress using polynomial fit, degree 2 and 3. The surface plot showed a surface curve.
 
@@ -51,4 +51,19 @@ Plotting the objective function with constraint functions, it showed that the de
 
 ![](image/compare_surf.png)
 
+### 3. Optimisation
+Open [subsystem1_optimisation.m](subsystem1_optimisation.m) and run the code in MATLAB.The optimisation method used for this objective function was nonlinear constrained optimisation. A local minimum was found at the upper bounds of the variable ranges, where width = 20mm and thickness = 4.5mm.
+
+    Local minimum found that satisfies the constraints.
+
+    Optimization completed because the objective function is non-decreasing in 
+    feasible directions, to within the default value of the optimality tolerance,
+    and constraints are satisfied to within the default value of the constraint tolerance.
+
+    <stopping criteria details>
+
+
+    x =
+
+       20.0000    4.5000
 
