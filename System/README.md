@@ -9,7 +9,7 @@
   - [optimization toolbox](https://uk.mathworks.com/products/optimization.html)
 ## Instruction
 ### 1. Overall objective of system level optimisation
-The system level objective was to **maximize** the **volume** of the object carried, with drone arm width and thickness optimized in subsystem 1, the maximum stress on drone arms could act as a variable indicating the load of objective volume that the drone could carry. 
+The system level objective was to **maximise** the **volume** of the object carried, with drone arm width and thickness optimized in subsystem 1, the maximum stress on drone arms could act as a variable indicating the load of objective volume that the drone could carry. 
 
 The dataset was generated from FEA simulation with optimized arm width and thickness, the maximum volume data was generated using the algorithm defined in subsystem 2.
 ### 2. Objective function and optimisation
