@@ -23,4 +23,4 @@ beq = [];
 x0 = [15,3];% initial value to start optimisation
 x = fmincon(fun,x0,A,b,Aeq,beq,lb,ub) % Nonlinear constrained optimisation 
     
-
+toc;
