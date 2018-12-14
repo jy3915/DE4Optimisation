@@ -12,15 +12,15 @@
   2. optimization toolbox
 ## Instruction
 ### 1. Arm length partial minimization
-Open stress_armlenght.m and run the code in MATLAB(Elapsed time is 0.082109 seconds). The code reads the data in rual.csv and will plot a graph of drone arm length against maximum stress.
+Open [stress_armlength.m](stress_armlength.m) and run the code in MATLAB(Elapsed time is 0.082109 seconds). The code reads the data in [rual.csv](rual.csv) and will plot a graph of drone arm length against maximum stress.
 
 ![](image/sl_poly.png)
 
 This indicated the linear relationship between drone arm length and maximum stress. The dimensional lower bound for arm length was 81.6mm, so the arm length was minimized to 81.6mm.
 ### 2. Objective function with variables of arm width and thickness 
-Open stress_armwidth_armthickness.m and run the code in MATLAB. The code reads the data in ruall.csv and use curve fitting toolbox to generate functions subject to drone arm width and thickness.
+Open [stress_armwidth_armthickness.m](stress_armwidth_armthickness.m) and run the code in MATLAB. The code reads the data in [ruall.csv](ruall.csv) and use curve fitting toolbox to generate functions subject to drone arm width and thickness.
 
-The objective function was arm width and thickness against maximum stress using polynomail fit, degree 2 and 3. The surface plot showed a surface curve.
+The objective function was generated with arm width and thickness against maximum stress using polynomial fit, degree 2 and 3. The surface plot showed a surface curve.
 
 
      fs(x,y) = p00 + p10*x + p01*y + p20*x^2 + p11*x*y + p02*y^2 + p21*x^2*y 
@@ -38,3 +38,17 @@ The objective function was arm width and thickness against maximum stress using 
        p03 =      -3.334  (-3.98, -2.687)
 
 ![](image/swh_surf.png)
+
+Nonlinear constraint of the mass of drone frame was fitted to a function using polynomial fit, degree 1 and 1.
+
+![](image/mwh_surf.png)
+
+Nonlinear constraint of the deflection on drone arm was also fitted to a function using polynomial fit, degree 2 and 3.
+
+![](image/dwh_surf.png)
+
+Plotting the objective function with constraint functions, it showed that the deflection was not constraining the objective function in this variable range. The mass, however, constrained the objective function at the intersection of two surfaces.
+
+![](image/compare_surf.png)
+
+
