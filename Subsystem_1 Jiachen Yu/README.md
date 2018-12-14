@@ -11,7 +11,7 @@
   1. [curve fitting toolbox](https://uk.mathworks.com/products/curvefitting.html)
   2. [optimization toolbox](https://uk.mathworks.com/products/optimization.html)
 ## Instruction
-**NOTE:** execution time are recorded with Windows 10 system setup running Intel(R)Core(TM)i7-4710MQ CPU @ 2.50GHz.
+**NOTE:** execution time are recorded with Windows 10 Pro system setup running Intel(R)Core(TM)i7-4710MQ CPU @ 2.50GHz.
 ### 1. Arm length partial minimization
 Open [stress_armlength.m](stress_armlength.m) and run the code in MATLAB(Elapsed time is 0.082109 seconds). The code reads the data in [rual.csv](rual.csv) and will plot a graph of drone arm length against maximum stress.
 
